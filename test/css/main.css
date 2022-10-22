@@ -1,0 +1,51 @@
+.item ,#innerBox i  {
+    cursor: pointer;
+}
+
+.layer{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    opacity: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.803);
+    transition: all 0.5s;
+}
+.item:hover .layer{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    opacity: 1;
+}
+#BoxContainer
+{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.684);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#innerBox{
+    background-image: url("../images/portfolio-1.jpg");
+    width: 40%;
+    height: 70%;
+    background-size: cover;
+}
+
+@media screen and (max-width: 700px) {
+    #innerBox{
+        width: 80%;
+        height: 50%;
+    }
+}
+img{
+    height:200px;
+    object-fit: cover;
+    object-position: center;
+}
