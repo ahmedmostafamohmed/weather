@@ -16,172 +16,167 @@
         <div class="text-loading fw-bold">L<span class="loader"></span>ading...</div>
     </div>
 
+    <header class="header" id="to-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">Weather</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto p-5 d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link active px-4 py-1 rounded-pill me-2" aria-current="page"
+                                href="#home">Home</a>
+                        </li>
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">Weather</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars text-white"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto p-5 d-flex justify-content-around">
-                    <li class="nav-item">
-                        <a class="nav-link active px-4 py-1 rounded-pill me-2" aria-current="page" href="#home">Home</a>
-                    </li>
-
-                    <li class="nav-item ">
-                        <a class="nav-link px-4 py-1 rounded-pill me-2" href="#Search1">Search</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link px-4 py-1 rounded-pill mx-2" href="#temp">Temp</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link px-4 py-1 rounded-pill mx-2" href="#home">Photos</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link px-4 py-1 rounded-pill mx-2" href="#footer">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-    <div id="Search1" class="">
-        <div class="banner py-5">
-            <div class="container pb-5">
-                <form class="py-5 d-flex justify-content-center">
-                    <div class="input-srarch text-center">
-                        <input type="search" id="FindLocation"
-                            class="form-control text-white p-3 px-4 pl-10 w-full rounded-pill dark:placeholder-gray-400"
-                            placeholder="Find your Location..." required="">
-
-                    </div>
-                </form>
-
-                <div class="cards-container rounded-top ">
-
-                    <div class="row rounded-top ">
-
-                        <div class="col-md-12 col-lg-4 col-sm-12 card-body1-3 p-0 m-0">
-                            <div class="card border-0 rounded-0">
-                                <div class="card-header card-header1-3 d-flex justify-content-between rounded-0">
-
-                                    <div id="day">day</div>
-                                    <div id="Month">DateDay</div>
-                                </div>
-
-
-
-                                <div class="card-body card-body1-3">
-                                    <h5 id="location" class="card-title"></h5>
-                                    <div class="d-flex justify-content-around">
-                                        <h2 id="temp" class="card-text pb-4 card-text1"></h2>
-                                        <div> <img id="icon" alt=""> </div>
-                                    </div>
-
-                                    <p id="description" class="pb-3"></p>
-
-                                    <div class="d-flex justify-content-around col-9">
-                                        <div><i class="fa-solid fa-umbrella"></i><span id="humidity"
-                                                class="ms-1"></span></div>
-                                        <div><i class="fa-solid fa-wind"></i><span id="windKph" class="ms-1"></span>
-                                        </div>
-                                        <div><i class="fa-regular fa-compass"></i><span id="wind_direction"
-                                                class="ms-1"></span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 col-lg-4 col-sm-12 shadow card-body2 p-0  m-0">
-                            <div class="card border-0 text-center rounded-0">
-                                <div class="card-header  card-header2 rounded-0">
-                                    <div id="nextDay">Day</div>
-                                </div>
-
-                                <div class="card-body text-center card-body2 ">
-                                    <div class="d-flex justify-content-center">
-                                        <img id="iconNextDay" alt="">
-                                    </div>
-
-                                    <div>
-                                        <h2 id="MaxtempNextDay" class="card-text "></h2>
-                                        <p id="mintempNextDay" class="card-text p1-card2-3 mb-3"></p>
-                                    </div>
-
-                                    <p id="descriptionNextDay"></p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 col-lg-4 col-sm-12 shadow card-body1-3 p-0 m-0">
-                            <div class="card border-0 text-center rounded-0">
-                                <div class="card-header card-header1-3 rounded-0">
-                                    <div id="thirdday"></div>
-                                </div>
-                                <div class="card-body ">
-                                    <div class="d-flex justify-content-center">
-                                        <img id="iconthirdDay" alt="">
-                                    </div>
-                                    <div class="">
-                                        <h2 id="MaxtempthirdDay"></h2>
-                                        <p id="mintempthirdDay"></p>
-                                    </div>
-                                    <p id="descriptionthirdDay">Sunny</p>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
+                        <li class="nav-item ">
+                            <a class="nav-link px-4 py-1 rounded-pill me-2" href="#Search1">Search</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link px-4 py-1 rounded-pill mx-2" href="#temp">Temp</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link px-4 py-1 rounded-pill mx-2" href="#home">Photos</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link px-4 py-1 rounded-pill mx-2" href="#footer">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+    </header>
 
+    <!-- ---------------------- body Section ---------------------- -->
+    <section id="WeatherBody">
+        <div id="Search1" class="">
+            <div class="banner">
+                <div class="container pb-5">
 
-
-
-        </div>
-
-
-    </div>
-
-
-    <div id="footer" class="footer py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9 col-md-6 col-sm-12">
-                    <form class="mb-4">
-                        <div class="relative ">
-                            <input type="search" id="default-search"
-                                class="form-control text-white p-3 pl-10 w-full text-sm rounded-pill dark:placeholder-gray-400"
+                    <form class="pb-4 pt-2 d-flex justify-content-center">
+                        <div class="input-srarch text-center">
+                            <input type="search" id="FindLocation"
+                                class="shadow form-control p-2 px-3 pl-10 w-full rounded-pill dark:placeholder-gray-400"
                                 placeholder="Find your Location..." required="">
-                            <button type="submit"
-                                class="btn-subscribe rounded-pill text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Subscribe</button>
                         </div>
                     </form>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 text-center">
-                    <i class="fa-brands fa-facebook icon-social rounded-circle"></i>
-                    <i class="fa-brands fa-twitter icon-social rounded-circle"></i>
-                    <i class="fa-brands fa-google-plus-g icon-social rounded-circle"></i>
-                    <i class="fa-brands fa-product-hunt icon-social rounded-circle"></i>
-                </div>
-                <div class="copyright text-center">Copyright © 2022, Designed by Ah-med Mostafa. All rights reserved
+
+                    <div class="cards-container rounded-top ">
+
+                        <div class="row rounded-top ">
+
+                            <div class="col-md-12 col-lg-4 col-sm-12 shadow card-body1-3 p-0 m-0">
+                                <div class="card border-0 rounded-0">
+                                    <div class="card-header card-header1-3 d-flex justify-content-between rounded-0">
+
+                                        <div id="day">day</div>
+                                        <div id="Month">DateDay</div>
+                                    </div>
+
+
+
+                                    <div class="card-body card-body1-3">
+                                        <h5 id="location" class="card-title"></h5>
+                                        <div class="d-flex justify-content-around">
+                                            <h2 id="temp" class="card-text pb-4 card-text1"></h2>
+                                            <div> <img id="icon" alt=""> </div>
+                                        </div>
+
+                                        <p id="description" class="pb-3"></p>
+
+                                        <div class="d-flex justify-content-around col-9">
+                                            <div><i class="fa-solid fa-umbrella"></i><span id="humidity"
+                                                    class="ms-1"></span></div>
+                                            <div><i class="fa-solid fa-wind"></i><span id="windKph" class="ms-1"></span>
+                                            </div>
+                                            <div><i class="fa-regular fa-compass"></i><span id="wind_direction"
+                                                    class="ms-1"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-lg-4 col-sm-12 shadow card-body2 p-0  m-0">
+                                <div class="card border-0 text-center rounded-0">
+                                    <div class="card-header  card-header2 rounded-0">
+                                        <div id="nextDay">Day</div>
+                                    </div>
+
+                                    <div class="card-body text-center card-body2 ">
+                                        <div class="d-flex justify-content-center">
+                                            <img id="iconNextDay" alt="">
+                                        </div>
+
+                                        <div>
+                                            <h2 id="MaxtempNextDay" class="card-text "></h2>
+                                            <p id="mintempNextDay" class="card-text p1-card2-3 mb-3"></p>
+                                        </div>
+
+                                        <p id="descriptionNextDay"></p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-lg-4 col-sm-12 shadow card-body3 p-0 m-0">
+                                <div class="card border-0 text-center rounded-0">
+                                    <div class="card-header card-header1-3 rounded-0">
+                                        <div id="thirdday"></div>
+                                    </div>
+                                    <div class="card-body ">
+                                        <div class="d-flex justify-content-center">
+                                            <img id="iconthirdDay" alt="">
+                                        </div>
+                                        <div class="">
+                                            <h2 id="MaxtempthirdDay"></h2>
+                                            <p id="mintempthirdDay"></p>
+                                        </div>
+                                        <p id="descriptionthirdDay">Sunny</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
+
+    <!-- ---------------------- footer Section ---------------------- -->
+    <footer>
+        <div id="footer" class="footer py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 m-auto mb-1">
+
+                        <a href="https://www.facebook.com/ali.waza.100" target="_blank">
+                            <i class="fa-brands fa-facebook icon-social rounded-circle"></i>
+                        </a>
+                        <a href="#" title="01155023528">
+                            <i class="fa-brands fa-whatsapp icon-social rounded-circle"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ahmed-mostafa-7469b41b7/" target="_blank">
+                            <i class="fa-brands fa-linkedin icon-social rounded-circle"></i>
+                        </a>
+                        <a href="https://github.com/ahmedmostafamohmed" target="_blank">
+                            <i class="fa-brands fa-github icon-social rounded-circle"></i>
+                        </a>
+
+                    </div>
+                    <div class="copyright text-center">Copyright © 2022, Designed by Ah-med Mostafa. All rights reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/main.js"></script>
-    <!-- <script src="../path/to/flowbite/dist/flowbite.js"></script> -->
 </body>
 
 </html>
