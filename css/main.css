@@ -6,43 +6,81 @@ body{
     width: 85%;
 }
 nav {
-    background-color: #070711;
-    
+    background-image: url(../images/wave-lg.svg);
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top center ; 
 }
 .navbar-brand{
     color: white ;
+    font-size: 23px;
+    font-weight: bold;
 }
 .navbar-brand:hover{
-    color:#009AD8;
+    color:#0b0b1b;
 }
 .nav-link{
    color: white ;
     border: none;
     transition: all 1s;
+    font-size: 17px;
+    
 }
 .nav-link:hover{
-    color:#009AD8;
-    border: 1px solid #009AD8 ;
+    color:#0b0b1b;
+    border: 1px solid #0b0b1b;
 }
 .navbar-nav .nav-link.active{
-    color:#009AD8;
-    border: 1px solid #009AD8;
+    color:#0b0b1b;
+    border: 1px solid #0b0b1b;
+}
+.navbar-nav .nav-link.active{
+    color:#0b0b1b;
+    border: 1px solid #0b0b1b;
 }
 
-
+/* ----------------------------- body Section --------------------------------- */
 .banner{
-    background-image: url("../images/pexels-david-bartus-1710355.jpg");
+    background-image: url("../images/wave1.svg");
     background-size:cover;
-    background-position: top left;
+    background-position: center;
+    padding: 20px 0px 120px 0px;
 }
 
+/* Search form-control */
+.form-control{
+    color:#0581b3;
+    border-color: #0581b3;
+}
+.form-control:focus{
+    background-color: #ffffff;
+    border-color: #0b0b1b;
+    color: #0581b3;
+    box-shadow: none;
+    z-index: 0;
+}
+
+/*  --------------------- Cards  -------------------------- */
 .card-header1-3{
-    background-color: #070711;
-    color:#BFC1C8;
-    border-bottom: none; 
+    background-color: #0581b3;
+    color:#ffffff;
+    border-bottom: 1px solid #ffffff; 
 }
 .card-body1-3 {
     background-color: #ffffff;
+    /* background-image: url("../images/wave11.svg"); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top center ;
+    color:#070711;
+}
+.card-body3{
+    background-color: #ffffff;
+    /* background-image: url("../images/wave\ \(2\).svg"); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top center ;
     color:#070711;
 }
 .card-title{
@@ -57,62 +95,42 @@ p{
 }
 
 .card-header2{
-    background-color: #070711;
-    color:#BFC1C8;
+    background-color: #ffffff;
+    color:#0581b3;
     border-bottom: none;
     
 }
 .card-body2 {
-    background-color: #d9ddde;
+    background-color: #eeeeee;
+    background-image: url("../images/wave2.svg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top center ; 
     color:#070711;
 }
 .p1-card2-3 , .copyright{
     color:#070711;
 }
 
-
-
-
-
+/* ---------------------- footer Section ---------------------- */
 .footer{
-    background-color: #070711;
+    background-color: #0581b3;
 
 }
-.form-control{
-    background-color: #0b0b1b;
-    border-color: #1E202B;
-}
-.form-control:focus{
-    background-color: #070711;
-    border-color: #1E202B;
-    box-shadow: none;
-    z-index: 0;
-}
-.btn-subscribe{
-    right: 5px;
-    background-color: #009AD8;
-    border-color: #009AD8; 
-    z-index: 999;
-}
-.btn-subscribe:hover{
-    background-color: #0388bc;
-    border-color: #015b88;
-}
+/*  ------ icon-social --------*/
 .icon-social{
-    color: #009AD8;
-    font-size: 20px;
+    color: white;
+    font-size: 25px;
     padding:10px;
     cursor: pointer;
-    background-color: #070711;
-    border-color: #1E202B;
 }
 .icon-social:hover{
-    color:white;
-    background-color: #009AD8;
-    border-color: #009AD8;
+    color:#070711;
+    background-color: #0581b3;
+    border-color: #0581b3;
 }
 .copyright{
-    color:#BFC1C8;
+    color:#ffffff;
 }
 .input-srarch{
     width: 75%;
@@ -132,7 +150,7 @@ p{
     flex-direction: column;
 }
 .text-loading{
-    color: #009AD8;
+    color: #0581b3;
     font-size: x-large;
 }
 
@@ -155,7 +173,7 @@ p{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border-bottom: 4px solid #009AD8;
+    border-bottom: 4px solid #0581b3;
     border-left: 4px solid transparent;
   }
   @keyframes rotation {
@@ -168,9 +186,26 @@ p{
   } 
 
 
-
 @media screen and (max-width:540px) {
     .input-srarch{
         width: 100%;
     }
+    .navbar-brand{
+        color: #0b0b1b ;
+        font-size: 23px;
+        font-weight: bold;
+    }
+    .card-body1-3 {
+        background-image: url("../images/wave11.svg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: top center ;
+    }
+    .card-body3{
+        background-image: url("../images/wave\ \(2\).svg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: top center ;
+    }
+
 }
